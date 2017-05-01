@@ -14,7 +14,20 @@ $(document).ready(function() {
     $(".food").text(array[3]);
     $(".hobby").text(array[4]);
 
+    var newArray = [];
+    newArray.push(array[0]);
+    newArray.push(array[1]);
+    newArray.push(array[2]);
+
+    $("#list").append("<li>"+newArray[0]+"</li>");
+    $("#list").append("<li>"+newArray[1]+"</li>");
+    $("#list").append("<li>"+newArray[2]+"</li>");
+
+
+
     $("#result").show();
+    $("#list").show();
+
     event.preventDefault();
   });
  });
